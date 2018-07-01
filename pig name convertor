@@ -1,0 +1,14 @@
+pyg = "ay" #word augmentor
+
+original = raw_input('Enter a word:') 
+word = original.lower() #ensure case consistency of output
+first = word[0]
+new_word = word + first + pyg #create the new word
+new_word = new_word[1:] #augment original new word
+
+print new_word #display new word
+
+#if len(original) > 0 and original.isalpha():
+#    print original
+#else:
+#    print 'empty'
