@@ -1,0 +1,24 @@
+# This program aims to help calculate the area of a shape that the user input# 
+
+print("Area calculator started")
+shape = raw_input("What is the shape you would like to calculate? Enter C for Circle and T for Triangle.")
+option = shape
+
+if option == 'C':
+  print("You've chosen a Circle")
+  radius = float(raw_input("What is radius of circle?"))
+  area = 3.14159 * radius ** 2
+  print("The area is " + str(area))
+  
+elif option == 'T':
+  print("You've chosen a Triangle")
+  base = float(raw_input("What is the length of base of the triangle?"))
+  height = float(raw_input("What is the height of the triangle?"))
+  area = 0.5 * base * height
+  print("The area is " + str(area))
+  
+else:
+  print("You've entered an invalid shape")
+
+  print("Closing program")
+
